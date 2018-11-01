@@ -1,0 +1,16 @@
+<h1 id="cityname">Ville de {{weather.city.name}}</h1>
+
+<div id="content">
+  <div class="day" *ngFor="let list of weather.list">
+    <p>Température: {{list.main.temp}} - Température min: {{list.main.temp_min}} - Température max: {{list.main.temp_max}}</p>
+    <p>Pressure: {{list.main.pressure}}</p>
+    <p>Sea level: {{list.main.sea_level}} - Grnd level: {{list.main.grnd_level}}</p>
+    <p>Humidity: {{list.main.humidity}}</p>
+    <p>Clouds: {{list.clouds.all}}</p>
+    <p>Wind: {{list.wind.speed}} - {{list.wind.deg}}</p>
+    <ul>
+      <li *ngFor="let weatherDay of list.weather">{{weatherDay.main}} {{weatherDay.description}}  {{weatherDay.icon}}</li>
+    </ul>
+  </div>
+</div>
+

@@ -1,0 +1,15 @@
+.cityname{
+    text-align: center;
+    font-size: 25px;
+}
+
+.day{
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+
+.day .titleDay{
+    font-size: 15px;
+}

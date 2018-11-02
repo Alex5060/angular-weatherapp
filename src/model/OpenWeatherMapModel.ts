@@ -51,3 +51,7 @@ export interface Forecast {
     list: List[];
     city: City;
 }
+
+function formatDate(){
+    
+}

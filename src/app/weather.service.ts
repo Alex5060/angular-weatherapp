@@ -15,6 +15,6 @@ export class WeatherService {
   
   }
   getForecast(cityName:string, countryIsoCode: string): Observable<Forecast>{
-    return this.http.get<Forecast>(`${this.apiBaseUrl}?q=${cityName},${countryIsoCode}&APPID=${this.apiKey}`);
+    return this.http.get<Forecast>(`${this.apiBaseUrl}?q=${cityName},${countryIsoCode}&units=metric&lang=fr&APPID=${this.apiKey}`);
   }
 }
